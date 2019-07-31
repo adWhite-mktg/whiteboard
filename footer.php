@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package whiteboard
+ * @package Whiteboard
  */
 ?>
 			</div><!-- .row -->

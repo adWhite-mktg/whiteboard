@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package whiteboard
+ * @package Whiteboard
  */
 
 if ( ! function_exists( 'whiteboard_posted_on' ) ) :
