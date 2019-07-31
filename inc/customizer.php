@@ -2,7 +2,7 @@
 /**
  * Whiteboard Theme Customizer
  *
- * @package Whiteboard
+ * @package whiteboard
  */
 
 /**

@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Whiteboard
+ * @package whiteboard
  */
 
 get_header();

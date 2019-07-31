@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Whiteboard
+ * @package whiteboard
  */
 
 if (!function_exists('whiteboard_setup')):

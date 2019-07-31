@@ -4,7 +4,7 @@
  *
  * @link https://woocommerce.com/
  *
- * @package Whiteboard
+ * @package whiteboard
  */
 
 /**
