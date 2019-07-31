@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+@import "variables";
+
+// https://getbootstrap.com/docs/4.0/getting-started/theming/
+
+// Option A: Include all of Bootstrap
+
+@import "~bootstrap/scss/bootstrap";
+
+// Option B: Include parts of Bootstrap
+
+// Required
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+
+// Optional
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/code";
+// @import "~bootstrap/scss/grid";

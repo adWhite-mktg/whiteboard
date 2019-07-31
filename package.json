@@ -1,0 +1,35 @@
+{
+	"name": "whiteboard",
+	"version": "0.1.0",
+	"description": "WordPress theme starter based on _s",
+	"prettier": {
+		"braceStyle": "1tbs"
+	},
+	"scripts": {
+		"dev": "npm run development",
+		"development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"watch": "npm run development -- --watch",
+		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"prod": "npm run production",
+		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+	},
+	"devDependencies": {
+		"@prettier/plugin-php": "^0.11.2",
+		"browser-sync": "^2.26.7",
+		"browser-sync-webpack-plugin": "^2.2.2",
+		"laravel-mix": "^4.1.2",
+		"node-sass": "^4.12.0",
+		"prettier": "^1.18.2",
+		"resolve-url-loader": "3.1.0",
+		"sass-loader": "7.*",
+		"vue-template-compiler": "^2.6.10"
+	},
+	"dependencies": {
+		"bootstrap": "^4.3.1",
+		"cross-env": "^5.2.0",
+		"jquery": "^3.4.1",
+		"popper.js": "^1.15.0"
+	},
+	"author": "Juan Olvera",
+	"license": "GPLv2"
+}

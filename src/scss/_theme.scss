@@ -1,0 +1,111 @@
+/**
+ * Header
+ */
+
+/*
+ * Nav
+ */
+
+.dropdown-menu {
+	display: none;
+}
+
+/**
+ * Blog
+ */
+
+.blog,
+.archive {
+	word-break: break-word;
+}
+
+article.post {
+	float: left;
+	width: 100%;
+	border-bottom: 2px solid gray("200");
+
+	.entry-title {
+		font-weight: 700;
+	}
+
+	.entry-meta {
+		color: gray("600");
+
+		a {
+			color: gray("700");
+		}
+	}
+
+	.entry-footer {
+		font-size: 0.9em;
+
+		span {
+			margin-right: 0.5rem;
+		}
+
+		.cat-links {
+			display: block;
+		}
+
+		.comments-link {
+			display: block;
+		}
+	}
+}
+
+.sticky {
+	padding: 1rem;
+	background-color: $gray-200;
+}
+
+/*
+ * Sidebar
+ */
+
+#secondary {
+	word-break: break-word;
+}
+
+// Form
+.search-form {
+	padding-top: 2em;
+	padding-bottom: 2em;
+
+	.search-field {
+		@extend .form-control;
+	}
+
+	.search-submit {
+		@extend .btn;
+		@extend .btn-secondary;
+	}
+}
+
+/**
+ * Footer
+ */
+
+/*
+ * Comments
+ */
+
+#comments {
+	margin-top: 2em;
+	max-width: 100%;
+
+	#author,
+	#email,
+	#url,
+	#comment {
+		@extend .form-control;
+	}
+
+	#submit {
+		@extend .btn;
+		@extend .btn-secondary;
+	}
+
+	@include media-breakpoint-up(lg) {
+		max-width: 80%;
+	}
+}
