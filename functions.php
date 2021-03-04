@@ -128,6 +128,21 @@ add_action('widgets_init', 'whiteboard_widgets_init');
 function whiteboard_scripts() {
 	wp_enqueue_style('whiteboard-style', get_stylesheet_uri());
 
+	// Google Fonts
+	// https://wordpress.stackexchange.com/a/353611/68500
+	wp_enqueue_style( 'whiteboard-google-preconnect', 'https://fonts.gstatic.com' );
+
+	add_filter( 'style_loader_tag', 'add_preconnect_attr', 10, 2);
+
+	function add_preconnect_attr($html, $handle) {
+		if ( $handle === 'whiteboard-google-preconnect' ) {
+			return str_replace( "rel='stylesheet'", "rel='preconnect'", $html);
+		}
+		return $html;
+	}
+
+	wp_enqueue_style( 'whiteboard-fonts', 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap' );
+
 	wp_enqueue_script(
 		'whiteboard-navigation',
 		get_template_directory_uri() . '/js/navigation.js',
@@ -188,9 +203,9 @@ if (defined('JETPACK__VERSION')) {
 /**
  * Load WooCommerce compatibility file.
  */
-if (class_exists('WooCommerce')) {
-	require get_template_directory() . '/inc/woocommerce.php';
-}
+//if (class_exists('WooCommerce')) {
+//	require get_template_directory() . '/inc/woocommerce.php';
+//}
 
 /**
  * Register Custom Navigation Walker.

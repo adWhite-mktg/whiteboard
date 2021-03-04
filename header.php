@@ -26,7 +26,7 @@
             <?php esc_html_e('Skip to content', 'whiteboard'); ?>
         </a>
 
-        <header id="masthead" class="site-header">
+        <header id="masthead" class="site-header py-4 bg-light">
           <nav id="site-navigation" class="navbar site-nav navbar-expand-md navbar-light bg-light main-navigation"
                 role="navigation">
 				<div class="container">
@@ -35,7 +35,7 @@
       the_custom_logo();
       if (is_front_page() && is_home()): ?>
 						<h1 class="site-title">
-							<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+							<a class="font-weight-bold text-dark" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 								<?php bloginfo('name'); ?>
 							</a>
 						</h1>
